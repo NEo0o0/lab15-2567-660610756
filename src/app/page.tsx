@@ -42,7 +42,7 @@ const schema = z
     }),
     acceptTermsAndConds: z.literal(true, {
       // message: "You must accept terms and conditions",
-      errorMap: (issue, ctx) => ({
+      errorMap: () => ({
         message: "You must accept terms and conditions",
       }),
     }),
